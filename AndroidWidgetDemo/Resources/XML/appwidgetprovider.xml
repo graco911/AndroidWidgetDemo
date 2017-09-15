@@ -1,8 +1,12 @@
-﻿<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
-    android:minWidth="288dip"
-    android:minHeight="72dip"
-    android:resizeMode="horizontal"
-    android:minResizeWidth="144dip"
-    android:updatePeriodMillis="1000"
-    android:initialLayout="@layout/Widget"
-    android:previewImage="@drawable/web_hi_res_512"/>
+﻿<appwidget-provider
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:minWidth="110dp"
+  android:minHeight="110dp"
+  android:minResizeWidth="40dp"
+  android:minResizeHeight="40dp"
+  android:updatePeriodMillis="1800000"
+  android:initialLayout="@layout/Widget"
+  android:resizeMode="horizontal|vertical"
+  android:widgetCategory="home_screen"
+  android:previewImage="@drawable/web_hi_res_512">
+</appwidget-provider>

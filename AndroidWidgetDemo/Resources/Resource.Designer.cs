@@ -60,8 +60,11 @@ namespace AndroidWidgetDemo
 		public partial class Id
 		{
 			
+			// aapt resource value: 0x7f070001
+			public const int analogClock1 = 2131165185;
+			
 			// aapt resource value: 0x7f070000
-			public const int button1 = 2131165184;
+			public const int textView1 = 2131165184;
 			
 			static Id()
 			{
