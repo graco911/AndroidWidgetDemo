@@ -14,8 +14,14 @@ namespace AndroidWidgetDemo
     {
         public override void OnUpdate(Context context, AppWidgetManager appWidgetManager, int[] appWidgetIds)
         {
-            var me = new ComponentName(context, Java.Lang.Class.FromType(typeof(AppWidget)).Name);
-            appWidgetManager.UpdateAppWidget(me, BuildRemoteViews(context, appWidgetIds));
+            foreach (var item in appWidgetIds)
+            {
+                ActualizarWidget(context, item);
+            }
+        }
+
+        private void ActualizarWidget(Context context, int widgetId)
+        {
         }
 
         public override void OnReceive(Context context, Intent intent)
